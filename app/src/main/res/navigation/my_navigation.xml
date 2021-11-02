@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_navigation"
+    app:startDestination="@id/back_to_list">
+    <fragment
+        android:id="@+id/back_to_list"
+        android:name="com.example.fullnotesapp.NotesList"
+        android:label="fragment_back_to_list"
+        tools:layout="@layout/fragment_back_to_list" >
+        <action
+            android:id="@+id/action_back_to_list_to_updatepage"
+            app:destination="@id/updatepage" />
+    </fragment>
+    <fragment
+        android:id="@+id/updatepage"
+        android:name="com.example.fullnotesapp.UpdatePage"
+        android:label="fragment_updatepage"
+        tools:layout="@layout/fragment_updatepage" >
+        <action
+            android:id="@+id/action_updatepage_to_back_to_list"
+            app:destination="@id/back_to_list" />
+    </fragment>
+</navigation>

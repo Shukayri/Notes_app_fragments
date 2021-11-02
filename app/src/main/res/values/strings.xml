@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FullNotesApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="file_key">com.example.notes.PREFERENCE_FILE_KEY</string>
+</resources>
